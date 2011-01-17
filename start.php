@@ -8,6 +8,7 @@
 			elgg_echo('etis:widget:description:etis_publications')
 		);
 		extend_view('css', 'etis/css');
+		// Extend 'profile/userdetails' with own view to extend profile with information
 	}
 
     // Initialize
