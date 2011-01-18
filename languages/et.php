@@ -9,7 +9,7 @@
         Text: ETIS profile URL
         _missing_translation_
         */
-        "etis:widget:etis_profile_url" => "ETIS profile URL",
+        "etis:widget:etis_profile_url" => "Sinu ETISe profiili URL",
         
         /* 
         File: /etis/start.php
@@ -17,7 +17,7 @@
         Text: ETIS publications
         _missing_translation_
         */
-        "etis:widget:title:etis_publications" => "ETIS publications",
+        "etis:widget:title:etis_publications" => "Publikatsioonid ETISes",
         
         /* 
         File: /etis/start.php
@@ -25,7 +25,7 @@
         Text: Shows publications in ETIS.
         _missing_translation_
         */
-        "etis:widget:description:etis_publications" => "Shows publications in ETIS.",
+        "etis:widget:description:etis_publications" => "Näitab kasutaja publikatsioonide loetelu ETISe andmebaasis.",
         
         /* 
         File: /etis/views/default/widgets/etis_publications/view.php
@@ -33,7 +33,7 @@
         Text: Publications count
         _missing_translation_
         */
-        "etis:widget:label:pubs_count" => "Publications count",
+        "etis:widget:label:pubs_count" => "Publikatsioonide arv: ",
         
     );
 
