@@ -15,12 +15,12 @@
 	 */
 
     class ETISPublications {
-		public $etis_main = 'https://www.etis.ee/';
-		public $profile_url;
-		public $personVID;
-		public $pubs_holder_id = 'ctl00_ContentPlaceHolder1_PortaalIsikuPublikatsioonid1_GridView1';
-		public $pubs = array();
-		public $pubs_count = 0;
+		private $etis_main = 'https://www.etis.ee/';
+		private $profile_url;
+		private $personVID;
+		private $pubs_holder_id = 'ctl00_ContentPlaceHolder1_PortaalIsikuPublikatsioonid1_GridView1';
+		private $pubs = array();
+		private $pubs_count = 0;
 
 		public function __construct($profile_url) {
 			$this->profile_url = $profile_url;
@@ -45,12 +45,28 @@
 			}
 		}
 
-		protected function setPubs($pubs) {
+		public function getProfileUrl() {
+			return $this->profile_url;
+		}
+
+		public function getPersonVID() {
+			return $this->personVID;
+		}
+
+		public function getPubs() {
+			return $this->pubs;
+		}
+
+		public function getPubsCount() {
+			return $this->pubs_count;
+		}
+
+		private function setPubs($pubs) {
 			$this->pubs = $pubs;
 			$this->pubs_count = sizeof($pubs);
 		}
 
-		protected function extractPersonVID() {
+		private function extractPersonVID() {
 			if (preg_match('#PersonVID=([^&]+)#i', $this->profile_url, $vid)) {
 				if (is_array($vid) && sizeof($vid)>1) {
 					$this->personVID = $vid[1];
