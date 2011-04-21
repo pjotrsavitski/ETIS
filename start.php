@@ -1,6 +1,12 @@
 <?php
 
-    require_once('classes/etis_publications.php');
+    // Getting ready for 1.8 that includes autoloading classes
+    // Make a manu al load only if dealign with version prior to 1.8
+    if (get_version()<2011032200) {
+        if (!class_exists('ETISPublications')) {
+		    require_once(dirname(__FILE__).'/classes/ETISPublications.php');
+	    }
+	}
 
     function etis_init() {
 		add_widget_type('etis_publications',
