@@ -9,13 +9,15 @@
 
 		$body .= '<div class="etis_widget_content">';
 		if ($etis_publications->getPersonVID()) {
+            $body .= "<ul class=\"elgg-list elgg-list-entity\">";
 			/*translation:Publications count*/
-			$body .= '<div class="contentWrapper"><label>'.elgg_echo('etis:widget:label:pubs_count').': <a href="'.$etis_publications->getProfileURL().'" target="_blank">'.$etis_publications->getPubsCount().'</a></label></div>';
+			$body .= '<li class="elgg-item"><label>'.elgg_echo('etis:widget:label:pubs_count').': <a href="'.$etis_publications->getProfileURL().'" target="_blank">'.$etis_publications->getPubsCount().'</a></label></li>';
 			foreach ($etis_publications->getPubs() as $pub) {
-				$body .= '<div class="contentWrapper">';
+				$body .= "<li class=\"elgg-item\">";
 				$body .= $pub;
-				$body .= '</div>';
+				$body .= "</li>";
 			}
+            $body .= "</ul>";
 		}
 		$body .= '</div>';
 	}

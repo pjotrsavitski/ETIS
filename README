@@ -1,7 +1,7 @@
 ETIS plugin for Elgg
 
 == REQUIREMENTS ==
-  * Required version of Elgg 1.7.x, tested with 1.7.6 (http://elgg.org/download.php)
+  * Required version of Elgg 1.8.x, tested with 1.8.2 (http://elgg.org/download.php)
   * Plugin catalog name should be: etis
 
 == INSTALLATION ==
@@ -9,4 +9,4 @@ ETIS plugin for Elgg
   * Enable plugin
 
 == DESCRIPTION ==
-Current version 0.1 of the plugin will add a widget to allow showing publications from Estonian Research Portal - ETIS (https://www.etis.ee/index.aspx).
+Current version 0.2 of the plugin will add a widget to allow showing publications from Estonian Research Portal - ETIS (https://www.etis.ee/index.aspx).

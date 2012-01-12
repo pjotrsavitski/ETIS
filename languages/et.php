@@ -33,7 +33,7 @@
         Text: Publications count
         _missing_translation_
         */
-        "etis:widget:label:pubs_count" => "Publikatsioonide arv: ",
+        "etis:widget:label:pubs_count" => "Publikatsioonide arv",
         
     );
 
